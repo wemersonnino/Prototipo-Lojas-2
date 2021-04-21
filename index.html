@@ -1,22 +1,30 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt_BR">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Empresta Bem Melhor | Empréstimo consignado é na Empresta!</title>
+  <meta name="description" content="Na Empresta você encontra as melhores condições de crédito consignado! Venha conferir as melhores taxas e maiores prazos para pagamento!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="Empresta Bem Melhor | Empréstimo consignado é na Empresta!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://empresta.com.br/">
+  <meta property="og:image" content="img/emprestimo-consig.svg">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -25,8 +33,97 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <header id="header" class="navbar">
+    <section class="container-fluid">
+      <div id="topo-menu" class="row">
+        <ul id="navigation-topo" class="nav justify-content-end col-12">
+          <li class="nav-item"><a href="#" class="nav-link">Item 1</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 3</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 4</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 5</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 6</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Item 7</a></li>
+        </ul>
+      </div>
+    </section><!--\menu topo-->
+    <div class="w-100"></div>
+    <hr class="dropdown-divider col">
+    <div class="w-100"></div>
+    <section id="menu-main">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" alt="Empréstimo Consignado é na Empresta" id="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </header><!--/Header-->
+  <main id="main">
+    <section class="row">
+      <article id="banner-form" class="col">
+          <h1 id="text-form" class="text-white text-left col col-md-10">
+            Encontre a loja mais próxima de você
+          </h1>
+          <div class="w-100"></div><br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+          </div>
+          <input type="text" id="CEP" class="form-control" placeholder="Digite CEP ou Endereço" aria-label="CEP" aria-describedby="basic-addon1">
+          <button class="btn text-uppercase btn-cep" type="button" id="button-addon1">Buscar</button>
+        </div><!--/Form search-->
+        <p class="link-all-lojas">
+          <a href="#" class="link ">Ver todas as lojas</a>
+        </p>
+      </article>
+      <div id="maps" class="col">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=R.%20Cachoeira%20do%20Campo,%20285%20-%20Calafate,%20Belo%20Horizonte%20-%20MG,%2030411-278&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://123movies-to.org"></a><br>
+            <style>.mapouter{position:relative;text-align:right;height:589px;width:798px;}</style>
+            <a href="https://www.embedgooglemap.net">google map code</a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+          </div>
+        </div>
+      </div>
+    </section><!--/Banner-Map-->
+
+  </main><!--/Main-->
+  <footer id="footer"></footer><!--/Footer-->
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
