@@ -86,7 +86,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto:wght@400;500;700&display=swap');
+:root{
+  --white: #FFFFFF;
+  --cinzaB: #4A4A4A;
+  --preto10: #363636;
+  --preto50: #2E2E2E;
+  --orangeA: #EF6C00;
+  --cinzaC: #414141;
+  --cinzaA: #BCBCBC;
+  --cinzaD: #EFF2FA;
+  --blueA:#213565;
+  --greenA:#00D46C;
+  --blueB:#002E6E;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
 
 #topo-menu{
   width: 100%;
@@ -118,7 +143,7 @@ textarea {
 
 article #text-form{
   color: var(--white);
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'NotoSansJP', sans-serif;
   font-size: 3.375em;
   font-weight: 400;
   line-height: 1.108;
@@ -190,6 +215,80 @@ p a.link{
   height: 589px;
 }
 
+#box-best-result{
+  padding: 1rem 0 0 4rem;
+  margin: 0 auto 0 auto;
+}
+#box-best-result:after{
+  display: block;
+  position: relative;
+  content: "";
+  background: transparent url('../img/Grupo_157.svg') 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  width: 54px;
+  height: 120px;
+  top: -42rem;
+  left: -55px;
+}
+.text-title{
+  padding: 0 1rem 0;
+  color: var(--blueA);
+}
+.title-orange{
+  font-family: Roboto;
+  font-weight: 900;
+  font-size:2.875em;
+  letter-spacing: 0;
+  color: var(--orangeA);
+  text-align: left;
+  opacity: 1;
+  padding: 0 1rem 0;
+}
+.enderecos-phones{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0;
+  color: var(--cinzaC);
+  opacity: 1;
+  padding: 0 1rem 0;
+}
+.table td{
+  font-family: Roboto;
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: 0;
+  color: var(--cinzaC);
+}
+.phone-button{
+  background-color: var(--orangeA);
+  border-radius: 4px;
+  opacity: 1;
+  font-family: Roboto;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 0;
+  opacity: 1;
+}
+.phone-button-whats{
+  background-color: var(--greenA);
+  border-radius: 4px;
+  opacity: 1;
+  color: var(--white);
+  text-align: center;
+  font-family: Roboto;
+  letter-spacing: 0;
+  opacity: 1;
+}
+#box-image{
+  background-image: url("https://via.placeholder.com/549x483");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 
 /* ==========================================================================
    Helper classes
